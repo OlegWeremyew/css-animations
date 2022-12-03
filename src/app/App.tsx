@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {FC} from 'react';
 import './App.css';
-import {ButtonHover, CardRotate} from "../pages";
+import {BeveledCorners, ButtonHover, CardRotate, CreativeButtonHover, NeonButton} from "../pages";
 
-export function App() {
-  return (
-    <>
-      {/*<ButtonHover/>*/}
-      <CardRotate/>
-    </>
-  );
-}
+export const App: FC = () => (
+  <>
+    {/*<ButtonHover/>*/}
+    {/*<CardRotate/>*/}
+    {/*<BeveledCorners/>*/}
+    {/*<CreativeButtonHover/>*/}
+    <NeonButton/>
+  </>
+);
