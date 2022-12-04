@@ -1,0 +1,92 @@
+.wrapper {
+  background: linear-gradient(45deg, #93278f, #00a99d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 200px;
+}
+
+.progress {
+  cursor: pointer;
+  background-color: #111111;
+  height: 40px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 70px;
+  padding: 6px;
+
+  &:hover {
+
+    .fill {
+      animation-play-state: running;
+    }
+
+    .number {
+      transform: translateY(-40px);
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &:nth-child(1) {
+    .fill {
+      background-color: #ff0000;
+      width: 35%;
+    }
+  }
+
+  &:nth-child(2) {
+    .fill {
+      background-color: #008000;
+      width: 65%;
+    }
+  }
+
+  &:nth-child(3) {
+    .fill {
+      background-color: #000fff;
+      width: 95%;
+    }
+  }
+
+  .number {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-right: 18px;
+    font-size: 18px;
+    transition: 0.5s ease;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .fill {
+    background: linear-gradient(
+                    45deg,
+                    rgba(255, 255, 255, 0.5) 25%,
+                    transparent 25%,
+                    transparent 50%,
+                    rgba(255, 255, 255, 0.5) 50%,
+                    rgba(255, 255, 255, 0.5) 75%,
+                    transparent 75%,
+                    transparent
+    );
+    background-size: 28px;
+    border-radius: 5px;
+    height: 100%;
+    animation: move 0.5s linear infinite paused;
+  }
+}
+
+@keyframes move {
+  100% {
+    background-position: 28px 0;
+  }
+}

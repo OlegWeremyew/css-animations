@@ -1,6 +1,15 @@
 import React, {FC} from 'react';
 import './App.css';
-import {BeveledCorners, ButtonHover, CardRotate, CreativeButtonHover, NeonButton} from "../pages";
+import {
+  AnimatedIndicator,
+  BeveledCorners,
+  ButtonHover,
+  CardRotate,
+  CreativeButtonHover,
+  ErrorPage,
+  NeonButton,
+  ResponsiveMenu
+} from "../pages";
 
 export const App: FC = () => (
   <>
@@ -8,6 +17,9 @@ export const App: FC = () => (
     {/*<CardRotate/>*/}
     {/*<BeveledCorners/>*/}
     {/*<CreativeButtonHover/>*/}
-    <NeonButton/>
+    {/*<NeonButton/>*/}
+    {/*<ErrorPage/>*/}
+    {/*<ResponsiveMenu/>*/}
+    <AnimatedIndicator/>
   </>
 );

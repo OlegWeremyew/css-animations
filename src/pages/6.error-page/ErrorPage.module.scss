@@ -1,0 +1,50 @@
+.wrapper {
+  background: linear-gradient(45deg, #2e3194, #1bffff);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+  h2 {
+    margin: 10px 0;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 170px;
+    letter-spacing: 20px;
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU034SntRRbdI1vC0dJprVAvEOY-1ER3vm7GeeNfjU&s") center;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  a {
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #fa1918;
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 20px;
+    padding: 3% 6%;
+    font-size: 14px;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #45145a;
+      text-shadow: -5px 5px 20px #010101;
+    }
+  }
+}
