@@ -3,7 +3,7 @@ import styles from './NeonButton.module.scss'
 
 export const NeonButton = () => (
   <div className={styles.wrapper}>
-    <button type="button">
+    <button type="button"  className={styles.button}>
       <span></span>
       <span></span>
       <span></span>

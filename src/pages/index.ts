@@ -6,3 +6,6 @@ export * from './5.neon-button';
 export * from './6.error-page';
 export * from './7.responsive-menu';
 export * from './8.animated-indicator';
+export * from './9.three-d-rotate';
+export * from './10.animated-text-loading';
+export * from './11.anim-button-with-gradient';
