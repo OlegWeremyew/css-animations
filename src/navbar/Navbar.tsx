@@ -7,6 +7,7 @@ export const Navbar: FC = () => {
   return (
     <nav className={styles.navWrapper}>
       <div className={styles.navContainer}>
+
         <div className={styles.navItems}>
 
           <NavLink
@@ -71,6 +72,7 @@ export const Navbar: FC = () => {
           >
             <span className={styles.navText}>AnimatedTextLoading</span>
           </NavLink>
+
           <NavLink
             className={navData => (navData.isActive ? styles.activeLink : "")}
             to={routerPaths.AnimButtonWithGradient}
@@ -79,9 +81,11 @@ export const Navbar: FC = () => {
           </NavLink>
 
         </div>
+
         <div className={styles.navIcon}>
           <p>&#8620;</p>
         </div>
+
       </div>
     </nav>
   );

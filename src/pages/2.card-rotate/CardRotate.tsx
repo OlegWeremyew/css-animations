@@ -5,10 +5,13 @@ import {faYoutube, faInstagram, faTwitter, faVk, faGithub} from '@fortawesome/fr
 
 export const CardRotate: FC = () => (
   <div className={styles.wrapper}>
+
     <div className={styles.card}>
+
       <div className={styles.front}>
         <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="Photo"/>
       </div>
+
       <div className={styles.back}>
         <h1>
           John Doe
