@@ -5,7 +5,7 @@ import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 
 export const ResponsiveMenu = () => (
   <div className={styles.wrapper}>
-    <header>
+    <header  className={styles.headerWrapper}>
       <h2>Shrink the screen for test</h2>
       <input className={styles.switcher} type="checkbox" id="menu"/>
       <label className={styles.open} htmlFor="menu"><FontAwesomeIcon icon={faBars}/> </label>
