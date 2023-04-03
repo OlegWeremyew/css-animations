@@ -45,12 +45,12 @@ export const Navbar: FC = () => {
             <span className={styles.navText}>NeonButton</span>
           </NavLink>
 
-          <NavLink
-            className={navData => (navData.isActive ? styles.activeLink : "")}
-            to={routerPaths.ResponsiveMenu}
-          >
-            <span className={styles.navText}>ResponsiveMenu</span>
-          </NavLink>
+          {/*<NavLink*/}
+          {/*  className={navData => (navData.isActive ? styles.activeLink : "")}*/}
+          {/*  to={routerPaths.ResponsiveMenu}*/}
+          {/*>*/}
+          {/*  <span className={styles.navText}>ResponsiveMenu</span>*/}
+          {/*</NavLink>*/}
 
           <NavLink
             className={navData => (navData.isActive ? styles.activeLink : "")}

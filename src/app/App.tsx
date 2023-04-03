@@ -10,7 +10,7 @@ import {
   CreativeButtonHover, DropsElements,
   ErrorPage,
   NeonButton,
-  ResponsiveMenu, ThreeDRotate
+  ThreeDRotate,
 } from "../pages";
 import {HashRouter, Route, Routes} from "react-router-dom";
 import {routerPaths} from "../enum";
@@ -28,7 +28,7 @@ export const App: FC = () => (
         <Route path={routerPaths.CreativeButtonHover} element={<CreativeButtonHover/>}/>
         <Route path={routerPaths.NeonButton} element={<NeonButton/>}/>
         <Route path={routerPaths.ErrorPage} element={<ErrorPage/>}/>
-        <Route path={routerPaths.ResponsiveMenu} element={<ResponsiveMenu/>}/>
+        {/*<Route path={routerPaths.ResponsiveMenu} element={<ResponsiveMenu/>}/>*/}
         <Route path={routerPaths.AnimatedIndicator} element={<AnimatedIndicator/>}/>
         <Route path={routerPaths.ThreeDRotate} element={<ThreeDRotate/>}/>
         <Route path={routerPaths.AnimatedTextLoading} element={<AnimatedTextLoading/>}/>

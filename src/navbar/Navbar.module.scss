@@ -1,6 +1,7 @@
 .navWrapper {
   position: absolute;
-  width: 250px;
+  top: 0;
+  min-width: 250px;
   left: -220px;
   z-index: 10;
   background-color: #e7cc79;
