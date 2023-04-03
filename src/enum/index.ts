@@ -10,4 +10,6 @@ export enum routerPaths {
   ThreeDRotate = '/three-d-rotate',
   AnimatedTextLoading = '/animated-text-loading',
   AnimButtonWithGradient = '/anim-button-with-gradient',
+  CircleProgressBar = 'circle-progress-bar',
+  DropsElements = 'drops-elements',
 }

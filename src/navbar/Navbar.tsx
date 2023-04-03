@@ -80,6 +80,20 @@ export const Navbar: FC = () => {
             <span className={styles.navText}>AnimButtonWithGradient</span>
           </NavLink>
 
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.CircleProgressBar}
+          >
+            <span className={styles.navText}>CircleProgressBar</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.DropsElements}
+          >
+            <span className={styles.navText}>DropsElements</span>
+          </NavLink>
+
         </div>
 
         <div className={styles.navIcon}>

@@ -9,3 +9,5 @@ export * from './8.animated-indicator';
 export * from './9.three-d-rotate';
 export * from './10.animated-text-loading';
 export * from './11.anim-button-with-gradient';
+export * from './12.circle-progress-bar';
+export * from './13.drops-elements';

@@ -2,11 +2,12 @@ import React, {FC} from 'react';
 import './App.css';
 import {
   AnimatedIndicator,
-  AnimatedTextLoading, AnimButtonWithGradient,
+  AnimatedTextLoading,
+  AnimButtonWithGradient,
   BeveledCorners,
   ButtonHover,
-  CardRotate,
-  CreativeButtonHover,
+  CardRotate, CircleProgressBar,
+  CreativeButtonHover, DropsElements,
   ErrorPage,
   NeonButton,
   ResponsiveMenu, ThreeDRotate
@@ -32,6 +33,8 @@ export const App: FC = () => (
         <Route path={routerPaths.ThreeDRotate} element={<ThreeDRotate/>}/>
         <Route path={routerPaths.AnimatedTextLoading} element={<AnimatedTextLoading/>}/>
         <Route path={routerPaths.AnimButtonWithGradient} element={<AnimButtonWithGradient/>}/>
+        <Route path={routerPaths.CircleProgressBar} element={<CircleProgressBar/>}/>
+        <Route path={routerPaths.DropsElements} element={<DropsElements/>}/>
       </Routes>
     </HashRouter>
   </>
