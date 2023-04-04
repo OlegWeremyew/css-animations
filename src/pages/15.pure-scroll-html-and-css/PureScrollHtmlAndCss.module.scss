@@ -1,0 +1,87 @@
+$colors: #662d8c, #889245, #2e3192, #ed1c24;
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  color: #fff;
+}
+
+.pureInput {
+  display: none;
+}
+
+@for $i from 1 through length($colors) {
+  input#section#{$i}:checked ~ nav label[htmlFor='section#{$i}'] {
+    background-color: #fff;
+  }
+
+  input#section#{$i}:checked ~ section:nth-of-type(#{$i}) {
+    bottom: 0;
+    transition: 0.5s ease;
+    z-index: 1;
+  }
+
+  input#section#{$i}:checked ~ .cover {
+    background-color: nth($colors, $i);
+  }
+}
+
+.nav {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+
+  .label {
+    display: block;
+    width: 14px;
+    height: 14px;
+    margin: 12px 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
+.section {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-delay: 0.5s;
+
+  @for $i from 1 through 4 {
+    &:nth-of-type(#{$i}) {
+      background-color: nth($colors, $i);
+    }
+  }
+
+  .pureH2 {
+    font-size: 140px;
+    text-align: center;
+    letter-spacing: 5px;
+    color: #fff;
+  }
+}
+
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}

@@ -10,6 +10,7 @@ import {
   CreativeButtonHover, DropsElements,
   ErrorPage,
   NeonButton,
+  PacmanPreloader, PureScrollHtmlAndCss,
   ThreeDRotate,
 } from "../pages";
 import {HashRouter, Route, Routes} from "react-router-dom";
@@ -35,6 +36,8 @@ export const App: FC = () => (
         <Route path={routerPaths.AnimButtonWithGradient} element={<AnimButtonWithGradient/>}/>
         <Route path={routerPaths.CircleProgressBar} element={<CircleProgressBar/>}/>
         <Route path={routerPaths.DropsElements} element={<DropsElements/>}/>
+        <Route path={routerPaths.PacmanPreloader} element={<PacmanPreloader/>}/>
+        <Route path={routerPaths.PureScrollHtmlAndCss} element={<PureScrollHtmlAndCss/>}/>
       </Routes>
     </HashRouter>
   </>

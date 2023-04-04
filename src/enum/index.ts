@@ -12,4 +12,6 @@ export enum routerPaths {
   AnimButtonWithGradient = '/anim-button-with-gradient',
   CircleProgressBar = 'circle-progress-bar',
   DropsElements = 'drops-elements',
+  PacmanPreloader = 'pacman-preloader',
+  PureScrollHtmlAndCss = 'pure-scroll-html-and-css',
 }

@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import styles from './Navbar.module.scss'
 import {NavLink} from "react-router-dom";
 import {routerPaths} from "../enum";
+import {PacmanPreloader, PureScrollHtmlAndCss} from "../pages";
 
 export const Navbar: FC = () => {
   return (
@@ -92,6 +93,20 @@ export const Navbar: FC = () => {
             to={routerPaths.DropsElements}
           >
             <span className={styles.navText}>DropsElements</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.PacmanPreloader}
+          >
+            <span className={styles.navText}>PacmanPreloader</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.PureScrollHtmlAndCss}
+          >
+            <span className={styles.navText}>PureScrollHtmlAndCss</span>
           </NavLink>
 
         </div>

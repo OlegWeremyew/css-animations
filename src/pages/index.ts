@@ -11,3 +11,5 @@ export * from './10.animated-text-loading';
 export * from './11.anim-button-with-gradient';
 export * from './12.circle-progress-bar';
 export * from './13.drops-elements';
+export * from './14.pacman';
+export * from './15.pure-scroll-html-and-css';
