@@ -14,4 +14,5 @@ export enum routerPaths {
   DropsElements = 'drops-elements',
   PacmanPreloader = 'pacman-preloader',
   PureScrollHtmlAndCss = 'pure-scroll-html-and-css',
+  ParallaxEffect = 'parallax-effect',
 }
