@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import styles from './Navbar.module.scss'
 import {NavLink} from "react-router-dom";
 import {routerPaths} from "../enum";
+import {GlitchEffect} from "../pages";
 
 export const Navbar: FC = () => {
   return (
@@ -113,6 +114,13 @@ export const Navbar: FC = () => {
             to={routerPaths.ParallaxEffect}
           >
             <span className={styles.navText}>ParallaxEffect</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.GlitchEffect}
+          >
+            <span className={styles.navText}>GlitchEffect</span>
           </NavLink>
 
         </div>

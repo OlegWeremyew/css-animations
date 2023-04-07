@@ -8,7 +8,7 @@ import {
   ButtonHover,
   CardRotate, CircleProgressBar,
   CreativeButtonHover, DropsElements,
-  ErrorPage,
+  ErrorPage, GlitchEffect,
   NeonButton,
   PacmanPreloader,
   ParallaxEffect,
@@ -41,6 +41,7 @@ export const App: FC = () => (
         <Route path={routerPaths.PacmanPreloader} element={<PacmanPreloader/>}/>
         <Route path={routerPaths.PureScrollHtmlAndCss} element={<PureScrollHtmlAndCss/>}/>
         <Route path={routerPaths.ParallaxEffect} element={<ParallaxEffect/>}/>
+        <Route path={routerPaths.GlitchEffect} element={<GlitchEffect/>}/>
       </Routes>
     </HashRouter>
   </>

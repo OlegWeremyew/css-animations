@@ -1,3 +1,5 @@
+import {GlitchEffect} from "../pages";
+
 export enum routerPaths {
   ButtonHover = '/',
   CardRotate = '/card-rotate',
@@ -15,4 +17,5 @@ export enum routerPaths {
   PacmanPreloader = 'pacman-preloader',
   PureScrollHtmlAndCss = 'pure-scroll-html-and-css',
   ParallaxEffect = 'parallax-effect',
+  GlitchEffect = 'glitch-effect',
 }
