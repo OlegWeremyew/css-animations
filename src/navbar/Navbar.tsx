@@ -123,6 +123,27 @@ export const Navbar: FC = () => {
             <span className={styles.navText}>GlitchEffect</span>
           </NavLink>
 
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.RotateButton}
+          >
+            <span className={styles.navText}>RotateButton</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.ButtonWithWaveEffect}
+          >
+            <span className={styles.navText}>ButtonWithWaveEffect</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.InterestingHoverEffect}
+          >
+            <span className={styles.navText}>InterestingHoverEffect</span>
+          </NavLink>
+
         </div>
 
         <div className={styles.navIcon}>

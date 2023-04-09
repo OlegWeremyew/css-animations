@@ -5,14 +5,14 @@ import {
   AnimatedTextLoading,
   AnimButtonWithGradient,
   BeveledCorners,
-  ButtonHover,
+  ButtonHover, ButtonWithWaveEffect,
   CardRotate, CircleProgressBar,
   CreativeButtonHover, DropsElements,
-  ErrorPage, GlitchEffect,
+  ErrorPage, GlitchEffect, InterestingHoverEffect,
   NeonButton,
   PacmanPreloader,
   ParallaxEffect,
-  PureScrollHtmlAndCss,
+  PureScrollHtmlAndCss, RotateButton,
   ThreeDRotate,
 } from "../pages";
 import {HashRouter, Route, Routes} from "react-router-dom";
@@ -42,6 +42,9 @@ export const App: FC = () => (
         <Route path={routerPaths.PureScrollHtmlAndCss} element={<PureScrollHtmlAndCss/>}/>
         <Route path={routerPaths.ParallaxEffect} element={<ParallaxEffect/>}/>
         <Route path={routerPaths.GlitchEffect} element={<GlitchEffect/>}/>
+        <Route path={routerPaths.RotateButton} element={<RotateButton/>}/>
+        <Route path={routerPaths.ButtonWithWaveEffect} element={<ButtonWithWaveEffect/>}/>
+        <Route path={routerPaths.InterestingHoverEffect} element={<InterestingHoverEffect/>}/>
       </Routes>
     </HashRouter>
   </>
