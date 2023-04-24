@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import styles from './Navbar.module.scss'
 import {NavLink} from "react-router-dom";
 import {routerPaths} from "../enum";
-import {GlitchEffect} from "../pages";
+import {SlopingWindow} from "../pages";
 
 export const Navbar: FC = () => {
   return (
@@ -142,6 +142,41 @@ export const Navbar: FC = () => {
             to={routerPaths.InterestingHoverEffect}
           >
             <span className={styles.navText}>InterestingHoverEffect</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.CreativeCard}
+          >
+            <span className={styles.navText}>CreativeCard</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.LinearShadowEffect}
+          >
+            <span className={styles.navText}>LinearShadowEffect</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.ButtonWithInterestingHoverEffect}
+          >
+            <span className={styles.navText}>ButtonWithInterestingHoverEffect</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.SuperCreativeProductCardAnimation}
+          >
+            <span className={styles.navText}>SuperCreativeProductCardAnimation</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.SlopingWindow}
+          >
+            <span className={styles.navText}>SlopingWindow</span>
           </NavLink>
 
         </div>

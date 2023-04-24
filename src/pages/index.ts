@@ -18,3 +18,8 @@ export * from './17.glitch-effect';
 export * from './18.rotate-button';
 export * from './19.button-with-wave-effect';
 export * from './20.interesting-hover-effect';
+export * from './21.creative-card';
+export * from './22.-linear-shadow-effect';
+export * from './23.button-with-interesting-hover-effect';
+export * from './24.super-creative-product-card-animation';
+export * from './25.sloping-window';

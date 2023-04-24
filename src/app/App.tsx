@@ -7,13 +7,13 @@ import {
   BeveledCorners,
   ButtonHover, ButtonWithWaveEffect,
   CardRotate, CircleProgressBar,
-  CreativeButtonHover, DropsElements,
-  ErrorPage, GlitchEffect, InterestingHoverEffect,
+  CreativeButtonHover, CreativeCard, DropsElements,
+  ErrorPage, GlitchEffect, InterestingHoverEffect, ButtonWithInterestingHoverEffect,
   NeonButton,
   PacmanPreloader,
   ParallaxEffect,
   PureScrollHtmlAndCss, RotateButton,
-  ThreeDRotate,
+  ThreeDRotate, LinearShadowEffect, SuperCreativeProductCardAnimation, SlopingWindow,
 } from "../pages";
 import {HashRouter, Route, Routes} from "react-router-dom";
 import {routerPaths} from "../enum";
@@ -45,6 +45,11 @@ export const App: FC = () => (
         <Route path={routerPaths.RotateButton} element={<RotateButton/>}/>
         <Route path={routerPaths.ButtonWithWaveEffect} element={<ButtonWithWaveEffect/>}/>
         <Route path={routerPaths.InterestingHoverEffect} element={<InterestingHoverEffect/>}/>
+        <Route path={routerPaths.CreativeCard} element={<CreativeCard/>}/>
+        <Route path={routerPaths.LinearShadowEffect} element={<LinearShadowEffect/>}/>
+        <Route path={routerPaths.ButtonWithInterestingHoverEffect} element={<ButtonWithInterestingHoverEffect/>}/>
+        <Route path={routerPaths.SuperCreativeProductCardAnimation} element={<SuperCreativeProductCardAnimation/>}/>
+        <Route path={routerPaths.SlopingWindow} element={<SlopingWindow/>}/>
       </Routes>
     </HashRouter>
   </>

@@ -1,3 +1,5 @@
+import {ButtonWithInterestingHoverEffect, SlopingWindow, SuperCreativeProductCardAnimation} from "../pages";
+
 export enum routerPaths {
   ButtonHover = '/',
   CardRotate = '/card-rotate',
@@ -19,4 +21,9 @@ export enum routerPaths {
   RotateButton = 'rotate-button',
   ButtonWithWaveEffect = 'button-with-wave-effect',
   InterestingHoverEffect = 'interesting-hover-effect',
+  CreativeCard = 'creative-card',
+  LinearShadowEffect = 'linear-shadow-effect',
+  ButtonWithInterestingHoverEffect = 'button-with-interesting-hover-effect',
+  SuperCreativeProductCardAnimation = 'super-creative-product-cardAnimation',
+  SlopingWindow = 'sloping-window'
 }
