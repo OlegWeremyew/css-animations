@@ -5,15 +5,28 @@ import {
   AnimatedTextLoading,
   AnimButtonWithGradient,
   BeveledCorners,
-  ButtonHover, ButtonWithWaveEffect,
-  CardRotate, CircleProgressBar,
-  CreativeButtonHover, CreativeCard, DropsElements,
-  ErrorPage, GlitchEffect, InterestingHoverEffect, ButtonWithInterestingHoverEffect,
+  ButtonHover,
+  ButtonWithWaveEffect,
+  CardRotate,
+  CircleProgressBar,
+  CreativeButtonHover,
+  CreativeCard,
+  DropsElements,
+  ErrorPage,
+  GlitchEffect,
+  InterestingHoverEffect,
+  ButtonWithInterestingHoverEffect,
   NeonButton,
   PacmanPreloader,
   ParallaxEffect,
-  PureScrollHtmlAndCss, RotateButton,
-  ThreeDRotate, LinearShadowEffect, SuperCreativeProductCardAnimation, SlopingWindow,
+  PureScrollHtmlAndCss,
+  RotateButton,
+  ThreeDRotate,
+  LinearShadowEffect,
+  SuperCreativeProductCardAnimation,
+  SlopingWindow,
+  AnimatedCheckbox,
+  BeautifulScrollbar, AnimatedInputSearch, SuperSimpleStylishHoverEffect, IncredibleNeonCheckbox,
 } from "../pages";
 import {HashRouter, Route, Routes} from "react-router-dom";
 import {routerPaths} from "../enum";
@@ -50,6 +63,11 @@ export const App: FC = () => (
         <Route path={routerPaths.ButtonWithInterestingHoverEffect} element={<ButtonWithInterestingHoverEffect/>}/>
         <Route path={routerPaths.SuperCreativeProductCardAnimation} element={<SuperCreativeProductCardAnimation/>}/>
         <Route path={routerPaths.SlopingWindow} element={<SlopingWindow/>}/>
+        <Route path={routerPaths.AnimatedCheckbox} element={<AnimatedCheckbox/>}/>
+        <Route path={routerPaths.BeautifulScrollbar} element={<BeautifulScrollbar/>}/>
+        <Route path={routerPaths.AnimatedInputSearch} element={<AnimatedInputSearch/>}/>
+        <Route path={routerPaths.IncredibleNeonCheckbox} element={<IncredibleNeonCheckbox/>}/>
+        <Route path={routerPaths.SuperSimpleStylishHoverEffect} element={<SuperSimpleStylishHoverEffect/>}/>
       </Routes>
     </HashRouter>
   </>

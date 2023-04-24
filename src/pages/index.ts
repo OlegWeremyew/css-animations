@@ -23,3 +23,8 @@ export * from './22.-linear-shadow-effect';
 export * from './23.button-with-interesting-hover-effect';
 export * from './24.super-creative-product-card-animation';
 export * from './25.sloping-window';
+export * from './26.animated-checkbox';
+export * from './27.beautiful-scrollbar';
+export * from './29.animated-input-search';
+export * from './30.incredible-neon-checkbox';
+export * from './31.super-simple-stylish-hover-effect';

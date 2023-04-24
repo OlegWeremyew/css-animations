@@ -1,4 +1,4 @@
-import {ButtonWithInterestingHoverEffect, SlopingWindow, SuperCreativeProductCardAnimation} from "../pages";
+import {SuperSimpleStylishHoverEffect} from "../pages";
 
 export enum routerPaths {
   ButtonHover = '/',
@@ -25,5 +25,10 @@ export enum routerPaths {
   LinearShadowEffect = 'linear-shadow-effect',
   ButtonWithInterestingHoverEffect = 'button-with-interesting-hover-effect',
   SuperCreativeProductCardAnimation = 'super-creative-product-cardAnimation',
-  SlopingWindow = 'sloping-window'
+  SlopingWindow = 'sloping-window',
+  AnimatedCheckbox = 'animated-checkbox',
+  BeautifulScrollbar = 'beautiful-scrollbar',
+  AnimatedInputSearch = 'animated-input-search',
+  IncredibleNeonCheckbox = 'incredible-neon-checkbox',
+  SuperSimpleStylishHoverEffect = 'SuperSimpleStylishHoverEffect'
 }

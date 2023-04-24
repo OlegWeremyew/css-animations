@@ -2,7 +2,6 @@ import React, {FC} from 'react';
 import styles from './Navbar.module.scss'
 import {NavLink} from "react-router-dom";
 import {routerPaths} from "../enum";
-import {SlopingWindow} from "../pages";
 
 export const Navbar: FC = () => {
   return (
@@ -177,6 +176,41 @@ export const Navbar: FC = () => {
             to={routerPaths.SlopingWindow}
           >
             <span className={styles.navText}>SlopingWindow</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.AnimatedCheckbox}
+          >
+            <span className={styles.navText}>AnimatedCheckbox</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.BeautifulScrollbar}
+          >
+            <span className={styles.navText}>BeautifulScrollbar</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.AnimatedInputSearch}
+          >
+            <span className={styles.navText}>AnimatedInputSearch</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.IncredibleNeonCheckbox}
+          >
+            <span className={styles.navText}>IncredibleNeonCheckbox</span>
+          </NavLink>
+
+          <NavLink
+            className={navData => (navData.isActive ? styles.activeLink : "")}
+            to={routerPaths.SuperSimpleStylishHoverEffect}
+          >
+            <span className={styles.navText}>SuperSimpleStylishHoverEffect</span>
           </NavLink>
 
         </div>
