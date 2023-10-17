@@ -12,4 +12,3 @@ export const ButtonHover: FC = () => (
     </button>
   </div>
 );
-

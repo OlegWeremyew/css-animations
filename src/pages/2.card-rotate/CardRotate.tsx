@@ -5,7 +5,6 @@ import {faYoutube, faInstagram, faTwitter, faVk, faGithub} from '@fortawesome/fr
 
 export const CardRotate: FC = () => (
   <div className={styles.wrapper}>
-
     <div className={styles.card}>
 
       <div className={styles.front}>
@@ -36,7 +35,5 @@ export const CardRotate: FC = () => (
         </ul>
       </div>
     </div>
-
-
   </div>
 );

@@ -1,5 +1,3 @@
-import {SuperSimpleStylishHoverEffect} from "../pages";
-
 export enum routerPaths {
   ButtonHover = '/',
   CardRotate = '/card-rotate',
